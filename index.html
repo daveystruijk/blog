@@ -1,4 +1,15 @@
+---
+layout: layout.njk
+title: Davey Struijk
+---
+
 <h1>Posts</h1>
-{%- for post in collections.post -%}
-  <li>{{ post.data.title }}</li>
-{%- endfor -%}
+<ul>
+  {%- for post in collections.post -%}
+  <li>
+    <a href="{{ post.url | url }}">
+      {{ post.data.title }}
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>

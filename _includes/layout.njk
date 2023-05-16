@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>{{ title }}</title>
+
+    <style>
+      {% set css %}
+      {% include "styles/layout.css" %}
+      {% endset %}
+      {{ css | postcss | safe }}
+    </style>
   </head>
 
   <body>
-    {{ content }}
+    {{ content | safe }}
   </body>
 </html>
