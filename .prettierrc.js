@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ['prettier-plugin-tailwindcss', '@ianvs/prettier-plugin-sort-imports'],
-  printWidth: 120,
+  printWidth: 100,
   singleQuote: true,
   trailingComma: 'all',
   semi: true,
