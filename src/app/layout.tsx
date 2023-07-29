@@ -20,7 +20,7 @@ function Header() {
         height={256}
         alt="Profile Picture"
       />
-      <p>// TODO: Finish me</p>
+      <p>TODO: Finish me</p>
     </div>
   );
 }
